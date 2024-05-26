@@ -121,3 +121,12 @@ filegroup(
       "https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.0/clang+llvm-13.0.0-x86_64-linux-gnu-ubuntu-20.04.tar.xz"
     ],
   )
+
+  http_archive(
+    name="clang-llvm-16.0.6-x86_64-linux-gnu-ubuntu-20.04",
+    build_file="@llvm//:llvm_linux.BUILD",
+    strip_prefix="clang-llvm-16.0.6-x86_64-linux-gnu-ubuntu-20.04",
+    urls=[
+      "https://github.com/Panhaolin2001/CompilerAutotuning/releases/download/bazel_llvm/clang+llvm-16.0.6-x86_64-linux-gnu-ubuntu-20.04.tar.xz"
+    ],
+  )
